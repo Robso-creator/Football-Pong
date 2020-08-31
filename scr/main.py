@@ -2,7 +2,7 @@ import pygame
 
 pygame.init()
 
-window = pygame.display.set_mode([1280, 720])
+window = pygame.display.set_mode([1280, 720], pygame.RESIZABLE)
 window_title = pygame.display.set_caption('Football Pong')
 
 field = pygame.image.load("assets/field.png")
