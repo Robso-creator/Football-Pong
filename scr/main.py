@@ -27,14 +27,16 @@ def draw():
     window.blit(ball, (ball_x, ball_y))
 
     move_ball()
+    move_player1()
 
 
 def move_player1():
     global player1_y
     if player1_move_up:
-        player1_y -= 10
-    elif player1_move_down:
-        player1_y += 10
+        player1_y -= 5
+
+    if player1_move_down:
+        player1_y += 5
 
 
 def move_ball():
@@ -59,10 +61,6 @@ while loop:
                 player1_move_up = False
             if event.key == pygame.K_s:
                 player1_move_down = False
-
-
-
-
 
     draw()
 
