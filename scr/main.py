@@ -42,6 +42,7 @@ def move_player1():
         player1_y -= 5
     else:
         player1_move_up += 0
+
     if player1_move_down:
         player1_y += 5
     else:
