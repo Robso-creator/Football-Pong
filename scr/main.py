@@ -26,8 +26,9 @@ def draw():
     window.blit(player2, (1152, player2_y))
     window.blit(ball, (ball_x, ball_y))
 
-    move_ball()
     move_player1()
+    move_ball()
+
 
 
 def move_player1():
